@@ -16,4 +16,7 @@ export class CalculadoraComponent {
   subtraction(){
     this.result = this.num1 - this.num2;
   }
+  multiplication(){
+    this.result = this.num1 * this.num2;
+  }
 }
