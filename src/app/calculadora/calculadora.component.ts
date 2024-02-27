@@ -13,4 +13,7 @@ export class CalculadoraComponent {
   sum(){
     this.result = this.num1 + this.num2;
   }
+  subtraction(){
+    this.result = this.num1 - this.num2;
+  }
 }
