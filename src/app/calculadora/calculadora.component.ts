@@ -19,4 +19,7 @@ export class CalculadoraComponent {
   multiplication(){
     this.result = this.num1 * this.num2;
   }
+  division(){
+    this.result = this.num1 / this.num2;
+  }
 }
