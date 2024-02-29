@@ -8,18 +8,12 @@ import { Component } from '@angular/core';
 export class CalculadoraComponent {
   num1: number = 0
   num2: number = 0
-  result: number = 0
+  result: any = 0
+  sup: string = ""
 
-  sum(){
-    this.result = this.num1 + this.num2;
-  }
-  subtraction(){
-    this.result = this.num1 - this.num2;
-  }
-  multiplication(){
-    this.result = this.num1 * this.num2;
-  }
-  division(){
-    this.result = this.num1 / this.num2;
+  calc(operation: string = ""){
+    this.sup = "(" + this.num1 + operation + this.num2 + ")"
+    this.result = eval(this.sup);
   }
 }
+

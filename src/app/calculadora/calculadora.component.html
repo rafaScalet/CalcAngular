@@ -12,10 +12,10 @@
         </div>
       </div>
       <div class="button-group">
-        <button type="button" (click)="sum()">sum</button>
-        <button type="button" (click)="subtraction()">subtraction</button>
-        <button type="button" (click)="multiplication()">multiplication</button>
-        <button type="button" (click)="division()">division</button>
+        <button type="button" (click)="calc('+')">sum</button>
+        <button type="button" (click)="calc('-')">subtraction</button>
+        <button type="button" (click)="calc('*')">multiplication</button>
+        <button type="button" (click)="calc('/')">division</button>
       </div>
       <div class="result">
         <p>Result: {{result}}</p>
