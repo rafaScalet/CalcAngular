@@ -9,11 +9,9 @@ export class CalculadoraComponent {
   num1: number = 0
   num2: number = 0
   result: any = 0
-  sup: string = ""
 
   calc(operation: string = ""){
-    this.sup = "(" + this.num1 + operation + this.num2 + ")"
-    this.result = eval(this.sup);
+    this.result = eval(this.num1 + operation + this.num2);
   }
 }
 
