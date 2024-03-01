@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './calculadora.component.css'
 })
 export class CalculadoraComponent {
-  num1: number = 0
-  num2: number = 0
+  num1: any = 0
+  num2: any = 0
   result: any = 0
 
   calc(operation: string = ""){
